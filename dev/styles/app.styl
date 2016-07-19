@@ -1,0 +1,50 @@
+@import "./includes/bootstrap.min.css"
+@import "./includes/bootstrap-custom.css"
+@import "./includes/variables.styl"
+@import "./includes/navigation.styl"
+@import "./includes/clock.styl"
+@import "./includes/controls.styl"
+@import "./includes/page-title.styl"
+
+
+
+
+.navbar-brand,
+.navbar-right
+  color: white !important
+
+  h1
+    font-size: 100%
+    display: inline
+  h2
+    font-size: 75%
+    display: inline
+  h3
+    font-size: 75%
+    color: brandColorTextLight
+    padding-left: .5rem
+    display: inline
+
+
+.navbar-nav
+  color: white !important
+  .active
+    a
+      color: brandColor !important
+  >li
+    >a
+      color: white !important
+      &:hover
+        background-color: brandColorLight !important
+        color: brandColorTextLight !important
+
+
+.page-title
+  margin-top: 2.5rem
+  margin-bottom: 2.5rem
+
+.page-body
+  margin-top: 5rem
+
+input[type=search]
+  box-shadow: none

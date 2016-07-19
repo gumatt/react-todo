@@ -1,0 +1,84 @@
+@import "./includes/bootstrap.min.css";
+@import "./includes/bootstrap-custom.css";
+.navbar {
+  background-color: #182947;
+  color: #fff !important;
+}
+.navbar .active a {
+  font-weight: bold;
+  background-color: #6f82a2 !important;
+}
+.clock {
+  align-items: center;
+  background-color: #6f82a2;
+  border: 2px solid #2a3e5f;
+  border-radius: 50%;
+  display: flex;
+  height: 14rem;
+  width: 14rem;
+  justify-content: center;
+  margin: 4rem auto;
+}
+.clock-text {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+}
+.controls .button {
+  padding: 0.75rem 3rem;
+}
+.controls .button:first-child {
+  margin-right: 1.5rem;
+}
+.page-title {
+  margin: 1rem;
+  text-align: center;
+}
+.navbar-brand,
+.navbar-right {
+  color: #fff !important;
+}
+.navbar-brand h1,
+.navbar-right h1 {
+  font-size: 100%;
+  display: inline;
+}
+.navbar-brand h2,
+.navbar-right h2 {
+  font-size: 75%;
+  display: inline;
+}
+.navbar-brand h3,
+.navbar-right h3 {
+  font-size: 75%;
+  color: #6f82a2;
+  padding-left: 0.5rem;
+  display: inline;
+}
+.navbar-nav {
+  color: #fff !important;
+}
+.navbar-nav .active a {
+  color: #182947 !important;
+}
+.navbar-nav >li >a {
+  color: #fff !important;
+}
+.navbar-nav >li >a:hover {
+  background-color: #2a3e5f !important;
+  color: #6f82a2 !important;
+}
+.page-title {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.page-body {
+  margin-top: 5rem;
+}
+input[type=search] {
+  box-shadow: none;
+}
