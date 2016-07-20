@@ -35,6 +35,9 @@ var AppNav = React.createClass({
                         <LinkContainer to="/weather">
                             <NavItem eventKey={3}>Weather</NavItem>
                         </LinkContainer>
+                        <LinkContainer to="/todo">
+                            <NavItem eventKey={4}>TodoApp</NavItem>
+                        </LinkContainer>
                     </Nav>
                     <Nav pullRight>
                         <Navbar.Brand>

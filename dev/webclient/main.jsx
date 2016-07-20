@@ -5,6 +5,7 @@ var App = require('./app/App.jsx');
 var Timer = require('./timer/Timer.jsx');
 var Countdown = require('./countdown/Countdown.jsx');
 var Weather = require('./weather/Weather.jsx');
+var Todo = require('./todo/TodoApp.jsx');
 
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
             <Route path="/timer" component={Timer}></Route>
             <Route path="/countdown" component={Countdown}></Route>
             <Route path="/weather" component={Weather}></Route>
+            <Route path="/todo" component={Todo}></Route>
             <IndexRoute component={Weather}></IndexRoute>
         </Route>
 
