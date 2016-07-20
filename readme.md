@@ -16,6 +16,12 @@ I also prefer Bootstrap to Foundation, and have handled all the UI using react-b
 
 I like the syntax of Stylus over that of SCSS, and so the css pre-compiler used in this project is Stylus.
 
+## Deploying to Heroku
+
+Install heroku cli tool on your machine.
+`heroku create
+git push heroku master`
+
 ## Template Project Architecture
 
 This template is for a web-based, single-page application built with React.js.  
