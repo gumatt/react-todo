@@ -6,7 +6,7 @@ var TestUtils = require('react-addons-test-utils');
 
 var Controls = require('./ClockControls.jsx');
 
-describe('ClockControls', function() {
+describe.skip('ClockControls', function() {
     it('Controls should exist', function() {
         Controls.should.exist;
     });

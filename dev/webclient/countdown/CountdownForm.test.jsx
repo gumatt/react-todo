@@ -11,7 +11,7 @@ chai.use(sinonChai);
 
 var CountdownForm = require('./CountdownForm.jsx');
 
-describe('CountdownForm', function() {
+describe.skip('CountdownForm', function() {
     it('CountdownForm should exist', function() {
         CountdownForm.should.exist;
     });

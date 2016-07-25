@@ -40,7 +40,7 @@ describe('Timer', function() {
             }, 1001);
         });
 
-        it('should pause when status is paused', (done) => {
+        xit('should pause when status is paused', (done) => {
             var output = mount(<Timer />);
             var timer = output.get(0);
 

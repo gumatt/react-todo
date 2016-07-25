@@ -1,8 +1,8 @@
-var React = require('react');
-var {LinkContainer} = require('react-router-bootstrap');
-var ReactBootstrap = require('react-bootstrap');
-var {Navbar, Nav, NavItem, FormGroup, FormControl, Button} = ReactBootstrap;
-var Modal = require('react-bootstrap/lib/Modal');
+let React = require('react');
+let { LinkContainer } = require('react-router-bootstrap');
+const ReactBootstrap = require('react-bootstrap');
+let { Navbar, Nav, NavItem, FormGroup, FormControl, Button } = ReactBootstrap;
+let Modal = require('react-bootstrap/lib/Modal');
 
 
 var AppNav = React.createClass({

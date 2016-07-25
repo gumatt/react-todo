@@ -1,18 +1,26 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var should = require('chai').should();
-var {shallow, mount} = require('enzyme');
-var TestUtils = require('react-addons-test-utils');
-var sinon = require('sinon');
-var sinonChai = require("sinon-chai");
+import React from 'react';
+import chai from 'chai';
+import { mount } from 'enzyme';
+import sinonChai from 'sinon-chai';
 
 chai.should();
 chai.use(sinonChai);
 
-var TodoItem = require('./TodoItem.jsx');
+const TodoItem = require('./TodoItem.jsx');
 
-describe('TodoItem', function() {
-    it('should exist', function() {
+describe('TodoItem', () => {
+    it('should exist', () => {
         TodoItem.should.exist;
     });
+
+    it('should display todo item text', () => {
+        const todo = {
+            id: 3,
+            text: 'Luke, I am your father',
+        };
+        const wrapper = mount(<TodoItem id={todo.id} text={todo.text} />);
+        wrapper.prop('id').should.equal(todo.id);
+        wrapper.prop('text').should.equal(todo.text);
+        wrapper.text().should.equal('3. Luke, I am your father');
+    })
 });

@@ -6,7 +6,7 @@ var TestUtils = require('react-addons-test-utils');
 
 var Clock = require('./Clock.jsx');
 
-describe('Clock', function() {
+describe.skip('Clock', function() {
     it('Clock should exist', function() {
         Clock.should.exist;
     });

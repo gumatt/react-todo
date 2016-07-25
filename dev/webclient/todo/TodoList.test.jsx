@@ -1,32 +1,29 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var should = require('chai').should();
-var {shallow, mount} = require('enzyme');
-var TestUtils = require('react-addons-test-utils');
-var sinon = require('sinon');
-var sinonChai = require("sinon-chai");
+import React from 'react';
+import chai from 'chai';
+import { mount } from 'enzyme';
+import sinonChai from 'sinon-chai';
 
 chai.should();
 chai.use(sinonChai);
 
-var TodoList = require('./TodoList.jsx');
-var TodoItem = require('./TodoItem.jsx');
+const TodoList = require('./TodoList.jsx');
+const TodoItem = require('./TodoItem.jsx');
 
-describe('TodoList', function() {
-    it('should exist', function() {
+describe('TodoList', () => {
+    it('should exist', () => {
         TodoList.should.exist;
     });
 
     it('should render one TodoItem component for each item in todos prop', () => {
-        var todos = [{
+        const todos = [{
             id: 1,
-            text: 'Do something 1'
+            text: 'Do something 1',
         }, {
             id: 2,
-            text: 'Do something else'
+            text: 'Do something else',
         }];
-        var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos}/>);
-        var todoComponents = TestUtils.scryRenderedComponentsWithType(todoList,TodoItem);
+        const wrapper = mount(<TodoList todos={todos} />);
+        const todoComponents = wrapper.find(TodoItem);
 
         todoComponents.should.have.length(todos.length);
     });

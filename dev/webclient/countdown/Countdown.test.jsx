@@ -11,13 +11,13 @@ chai.use(sinonChai);
 
 var Countdown = require('./Countdown.jsx');
 
-describe('Countdown', function() {
+describe.skip('Countdown', function() {
     it('should exist', function() {
         Countdown.should.exist;
     });
 
     describe('handleSetCountdown', () => {
-        it('should set state to started and countdown', (done) => {
+        xit('should set state to started and countdown', (done) => {
             var output = mount(<Countdown />);
             var countdown = output.get(0);
             countdown.handleSetCountdown(10);
@@ -31,7 +31,7 @@ describe('Countdown', function() {
             }, 1001)
         });
 
-        it('should stop when countdown reaches 0', (done) => {
+        xit('should stop when countdown reaches 0', (done) => {
             var output = mount(<Countdown />);
             var countdown = output.get(0);
             countdown.handleSetCountdown(1);
@@ -42,7 +42,7 @@ describe('Countdown', function() {
             }, 3001)
         });
 
-        it('should pause coundown on paused status', (done) => {
+        xit('should pause coundown on paused status', (done) => {
             var output = mount(<Countdown />);
             var countdown = output.get(0);
             countdown.handleSetCountdown(3);
@@ -55,7 +55,7 @@ describe('Countdown', function() {
             }, 2001)
         });
 
-        it('should stop coundown on stopped status', (done) => {
+        xit('should stop coundown on stopped status', (done) => {
             var output = mount(<Countdown />);
             var countdown = output.get(0);
             countdown.handleSetCountdown(3);
