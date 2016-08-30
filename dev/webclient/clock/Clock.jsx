@@ -1,36 +1,36 @@
-var React = require('react');
+const React = require('react');
 
-var Clock = React.createClass({
-    getDefaultProps: function () {
+const Clock = React.createClass({
+    getDefaultProps() {
         return {
-            totalSeconds : 0
+            totalSeconds: 0,
         };
     },
-    formatSeconds: function(totalSeconds) {
-        var seconds = totalSeconds % 60;
-        var minutes = Math.floor(totalSeconds / 60);
+    formatSeconds(totalSeconds) {
+        let seconds = totalSeconds % 60;
+        let minutes = Math.floor(totalSeconds / 60);
 
-        if (seconds < 10 ) {
+        if (seconds < 10) {
             seconds = '0' + seconds;
-        };
+        }
 
         if (minutes < 10) {
             minutes = '0' + minutes;
-        };
+        }
 
         return minutes + ':' + seconds;
     },
-    render: function() {
-        var {totalSeconds} = this.props;
+    render() {
+        const { totalSeconds } = this.props;
 
         return (
-            <div className="clock">
+            <div className="clock" >
                 <span className="clock-text">
-                    {this.formatSeconds(totalSeconds)}
+                    {this.formatSeconds(totalSeconds)}!
                 </span>
             </div>
         );
-    }
+    },
 
 });
 
