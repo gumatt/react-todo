@@ -1,9 +1,8 @@
-var React = require('react');
-var Nav = require('./Nav.jsx');
-var ReactBootstrap = require('react-bootstrap');
-var {Grid, Row, Col} = ReactBootstrap;
+import React from 'react';
+import Nav from './Nav.jsx';
+import { Grid, Row, Col } from 'react-bootstrap';
 
-var App = (props) => {
+const App = (props) => {
     return (
         <div>
             <Nav companyName="Powerhouse" appName="template" />
@@ -16,6 +15,6 @@ var App = (props) => {
             </Grid>
         </div>
     );
-}
+};
 
 module.exports = App;

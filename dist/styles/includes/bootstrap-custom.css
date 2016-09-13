@@ -23,12 +23,12 @@
 .pull-right.block > .dropup,
 .pull-right.block > .input-group{
 	margin : 0 10px 10px 0!important;
-
+	
 }
 
 /* Icons */
 
-[class*=" fa-"],
+[class*=" fa-"], 
 [class*=" icon-"]{
 	width      : 13px;
 	text-align : center;
@@ -40,13 +40,13 @@
 	margin-right : -20px;
 	margin-left  : -20px;
 }
-[class^="col-sx-"],
+[class^="col-sx-"], 
 [class*=" col-sx-"],
-[class^="col-sm-"],
+[class^="col-sm-"], 
 [class*=" col-sm-"],
-[class^="col-md-"],
+[class^="col-md-"], 
 [class*=" col-md-"],
-[class^="col-lg-"],
+[class^="col-lg-"], 
 [class*=" col-lg-"]{
 	padding : 0 20px;
 }
@@ -192,21 +192,21 @@ form{
 select.form-control{
 	padding : 5px;
 }
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus, 
 .uneditable-input:focus {
 	box-shadow : none;
 	outline    : 0 none;
@@ -284,7 +284,7 @@ hr{
 .input-group-btn > .btn,
 .input-group-btn > .dropup,
 .input-group-btn > .dropdown{
-	float  : none;
+	float  : none;	
 	margin : 0 0 0 -1px;
 }
 .input-group-btn > .btn + .btn{
@@ -320,7 +320,7 @@ hr{
 }
 .dropdown-menu{
 	top        : 30px;
-	padding    : 10px 0;
+	padding    : 10px 0;	
 	font-size  : 13px;
 	text-align : left;
 }
@@ -454,7 +454,7 @@ li.dropdown,
 	float:left;
 	margin:0 5px 0 0;
 	line-height:16px;
-	text-align:center;
+	text-align:center;	
 }
 .label .fa.pull-right{
 	width:12px;
@@ -509,9 +509,9 @@ li.dropdown,
 .pagination{
 	float  : left;
 	height : 30px;
-	margin : 0;
+	margin : 0;	
 }
-.pagination > li > a,
+.pagination > li > a, 
 .pagination > li > span {
 	position : relative;
 	padding  : 5px 10px 4px 10px;
@@ -571,7 +571,7 @@ li.dropdown,
 }
 .modal{
 	z-index    : 5001;
-	overflow-y : auto;
+	overflow-y : auto;	
 }
 .modal .close{
 	text-shadow : none;
@@ -580,8 +580,8 @@ li.dropdown,
 .modal-footer .btn{
 	margin-bottom : 0;
 }
-body.modal-open,
-.modal-open .navbar-fixed-top,
+body.modal-open, 
+.modal-open .navbar-fixed-top, 
 .modal-open .navbar-fixed-bottom{
 	margin-right : 0;
 }
@@ -600,24 +600,24 @@ body.modal-open,
 	margin       : 0;
 	table-layout : fixed;
 }
-.table thead > tr > th,
-.table tbody > tr > th,
-.table tfoot > tr > th,
-.table thead > tr > td,
-.table tbody > tr > td,
+.table thead > tr > th, 
+.table tbody > tr > th, 
+.table tfoot > tr > th, 
+.table thead > tr > td, 
+.table tbody > tr > td, 
 .table tfoot > tr > td {
 	padding     : 10px;
 	line-height : 20px;
 }
-.table-condensed thead > tr > th,
-.table-condensed tbody > tr > th,
-.table-condensed tfoot > tr > th,
-.table-condensed thead > tr > td,
-.table-condensed tbody > tr > td,
+.table-condensed thead > tr > th, 
+.table-condensed tbody > tr > th, 
+.table-condensed tfoot > tr > th, 
+.table-condensed thead > tr > td, 
+.table-condensed tbody > tr > td, 
 .table-condensed tfoot > tr > td {
 	padding : 5px;
 }
-.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > th, 
 .table-bordered > thead > tr > td{
 	border-bottom-width : 1px;
 }
@@ -633,9 +633,9 @@ blockquote small{
  * We overirde the plugins here, this way you can update the css
  * files without worring that you have to change the css files.
  * ===============================================================
- */
-
-/* Select2 */
+ */ 
+ 
+/* Select2 */ 
 
 .select2-container{
 	float : left;
@@ -655,13 +655,13 @@ blockquote small{
 	-o-box-shadow      : none;
 }
 .select2-container .select2-choice .select2-arrow {
-	width : 30px;
+	width : 30px;	
 }
 .select2-container .select2-choice .select2-arrow b {
 	float  : left;
 	height : 24px;
 	width  : 24px;
-	margin : 1px 0 0 6px;
+	margin : 1px 0 0 6px;	
 }
 .select2-search{
 	display : block;
@@ -774,7 +774,7 @@ span.twitter-typeahead{
 	width              : calc(100% + 35px);
 	padding            : 15px 0;
 	text-align         : left;
-	box-shadow         : none;
+	box-shadow         : none;	
 	-webkit-box-shadow : none;
 	-moz-box-shadow    : none;
 }
@@ -860,13 +860,13 @@ ol.tt-dropdown-menu.tt-is-open{
 .bootstrap-timepicker-widget table td input{
 	height      : 30px;
 	width       : 38px;
-	line-height : 30px;
+	line-height : 30px;	
 }
 
 /* BootBox */
 
 .bootbox .modal-dialog{
-	width : 400px;
+	width : 400px;	
 }
 .bootbox-form{
 	float : none
@@ -878,9 +878,10 @@ ol.tt-dropdown-menu.tt-is-open{
 
 /* Datatables */
 
-table.tablesorter-bootstrap .tablesorter-header,
-table.tablesorter-bootstrap tfoot th,
+table.tablesorter-bootstrap .tablesorter-header, 
+table.tablesorter-bootstrap tfoot th, 
 table.tablesorter-bootstrap tfoot td {
 	font-size   : 13px;
 	font-weight : 600;
 }
+

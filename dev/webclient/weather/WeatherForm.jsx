@@ -27,7 +27,7 @@ class WeatherForm extends React.Component {
                     <FormGroup controlId="city">
                         <FormControl
                           type="text"
-                          placeholder="Enter city name"
+                          placeholder="Enter city name, fool"
                         />
                     </FormGroup>
                     <Button bsSize="large" block onClick={this.onFormSubmit}>Get Weather</Button>

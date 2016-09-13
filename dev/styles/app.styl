@@ -1,11 +1,48 @@
+@import "./includes/font-awesome.css"
 @import "./includes/bootstrap.min.css"
-@import "./includes/bootstrap-custom.css"
+// @import "./includes/bootstrap-custom.css"
+@import "./includes/base.css"
+@import "./includes/light-theme.css"
 @import "./includes/variables.styl"
 @import "./includes/navigation.styl"
 @import "./includes/clock.styl"
 @import "./includes/controls.styl"
 @import "./includes/page-title.styl"
 
+
+
+
+
+.menu-item
+  background: brandColor
+  list-style: none
+  padding:    3px
+  padding-right: 25px
+  a
+    color: lightsteelblue
+    i 
+      color: lightsteelblue
+      
+.active-page
+  a 
+    color: white !important
+  i 
+    color: white !important
+    
+      
+
+//    #app > div > div > div > div > nav > ul > li.menu-item.active
+// .menu-item.active::after
+//   content: ''
+//   position: absolute
+//   right 20px
+//   top: 30%
+//   width: 0
+//   height: 0
+//   border-top: 8px solid transparent
+//   border-bottom: 8px solid transparent
+//   border-right: 10px solid white
+//   clear: both
 
 .navbar
   background: brandColor

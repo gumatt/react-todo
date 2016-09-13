@@ -1,5 +1,7 @@
+@import "./includes/font-awesome.css";
 @import "./includes/bootstrap.min.css";
-@import "./includes/bootstrap-custom.css";
+@import "./includes/base.css";
+@import "./includes/light-theme.css";
 .navbar {
   background-color: #182947;
   color: #fff !important;
@@ -37,6 +39,24 @@
 .page-title {
   margin: 1rem;
   text-align: center;
+}
+.menu-item {
+  background: #182947;
+  list-style: none;
+  padding: 3px;
+  padding-right: 25px;
+}
+.menu-item a {
+  color: #b0c4de;
+}
+.menu-item a i {
+  color: #b0c4de;
+}
+.active-page a {
+  color: #fff !important;
+}
+.active-page i {
+  color: #fff !important;
 }
 .navbar {
   background: #182947;
